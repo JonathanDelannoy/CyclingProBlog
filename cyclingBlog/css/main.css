@@ -1,0 +1,126 @@
+.bord{
+    border: 1px solid black;
+}
+
+.imageArticle{
+    width: 20em;
+    height: 15em;
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+}
+
+.column{ 
+    border: none;
+    border-left: 1px solid rgba(151, 115, 95, 0.301);
+}
+
+.reseaux{
+    border: rgba(192, 192, 192, 0.699) 1px solid;
+}
+
+.color{
+    color: white;
+}
+
+.img-responsive{
+    height: 15em;
+}
+
+.cuadro_intro_hover{
+    position: relative;
+    overflow: hidden;
+    height: 15em;
+}
+.cuadro_intro_hover:hover .caption{
+    opacity: 1;
+    transform: translateY(-150px);
+}
+
+.cuadro_intro_hover .caption{
+    position: absolute;
+    top:150px;
+    transition:all 0.3s ease-in-out;
+    width: 100%;
+}
+.cuadro_intro_hover .blur{
+    background-color: rgba(0,0,0,0.7);
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    margin-top: 5em;
+}
+.cuadro_intro_hover .caption-text{
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    top:-20px;
+    width: 100%;
+}
+
+.disp{
+    display: flex;
+    flex-direction: column;
+}
+
+#accordion5 .panel-title a{
+    display: block;
+    padding: 10px 20px 10px 60px;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+    color: black;
+    background-color: silver;
+}
+
+.panier{
+    height: 5em;
+}
+
+.chat {
+    min-width: 2em;
+    padding:10px;
+    border:solid 1px rgba(0, 0, 0, 0.637);
+    border-right: none;
+    border-radius: 30px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.chat2 {
+    min-width: 2em;
+    padding:10px;
+    border:solid 1px rgba(0, 0, 0, 0.637);
+    border-radius: 30px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.chatbox{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.chatbox2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.vl{
+    border-left: 1px solid black;
+}
+
+@media screen and (max-width: 968px){
+    .vl{
+        border: none;
+    }
+}
